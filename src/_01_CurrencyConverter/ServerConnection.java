@@ -1,4 +1,4 @@
-package com.vulpelo;
+package _01_CurrencyConverter;
 
 import java.io.FileOutputStream;
 import java.net.URL;

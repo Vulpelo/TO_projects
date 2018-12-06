@@ -1,4 +1,5 @@
-package com.vulpelo;
+package _01_CurrencyConverter;
+
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElements;

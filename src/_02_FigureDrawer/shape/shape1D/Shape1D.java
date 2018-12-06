@@ -1,6 +1,6 @@
-package sample.shape.shape1D;
+package _02_FigureDrawer.shape.shape1D;
 
-import sample.shape.Shape;
+import _02_FigureDrawer.shape.Shape;
 
 public abstract class Shape1D extends Shape {
     float length() {

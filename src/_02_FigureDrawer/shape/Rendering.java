@@ -1,4 +1,4 @@
-package sample.shape;
+package _02_FigureDrawer.shape;
 
 import javafx.scene.Group;
 

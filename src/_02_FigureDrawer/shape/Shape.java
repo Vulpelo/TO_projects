@@ -1,4 +1,4 @@
-package sample.shape;
+package _02_FigureDrawer.shape;
 
 public abstract class Shape implements IShape, Rendering {
     float lineThickness = 1.0f;

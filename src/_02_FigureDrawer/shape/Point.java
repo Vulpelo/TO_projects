@@ -1,7 +1,7 @@
-package sample.shape;
+package _02_FigureDrawer.shape;
 
 import javafx.scene.Group;
-import sample.shape.Shape;
+import _02_FigureDrawer.shape.Shape;
 
 public class Point extends Shape {
     float x;

@@ -1,3 +1,5 @@
+package _04_FileDirectory;
+
 public class Main {
     public static void main(String[] args) {
         folderTest();

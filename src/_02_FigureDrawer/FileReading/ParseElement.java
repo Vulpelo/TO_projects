@@ -1,10 +1,10 @@
-package sample.FileReading;
+package _02_FigureDrawer.FileReading;
 
-import sample.FileReading.ParsingShapes.ParseCircle;
-import sample.FileReading.ParsingShapes.ParseLine;
-import sample.FileReading.ParsingShapes.ParseRectangle;
-import sample.FileReading.ParsingShapes.ParseShape;
-import sample.shape.Shape;
+import _02_FigureDrawer.FileReading.ParsingShapes.ParseCircle;
+import _02_FigureDrawer.FileReading.ParsingShapes.ParseLine;
+import _02_FigureDrawer.FileReading.ParsingShapes.ParseRectangle;
+import _02_FigureDrawer.FileReading.ParsingShapes.ParseShape;
+import _02_FigureDrawer.shape.Shape;
 
 import java.util.ArrayList;
 import java.util.List;

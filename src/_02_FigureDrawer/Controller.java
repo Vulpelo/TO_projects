@@ -1,8 +1,9 @@
-package sample;
+package _02_FigureDrawer;
+
 
 import javafx.scene.Group;
-import sample.FileReading.TXTReader;
-import sample.shape.Shape;
+import _02_FigureDrawer.FileReading.TXTReader;
+import _02_FigureDrawer.shape.Shape;
 
 import java.util.List;
 
@@ -17,7 +18,7 @@ public class Controller {
     public void buttonClicked(){
         TXTReader reader = new TXTReader();
 
-        List<Shape> shapes =  reader.readFile_Shapes("example.txt");
+        List<Shape> shapes =  reader.readFile_Shapes("./src/_02_FigureDrawer/example.txt");
 
         if (renderGroup.getChildren().size() > 0){
             renderGroup.getChildren().remove(0, renderGroup.getChildren().size()-1);

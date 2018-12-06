@@ -1,6 +1,6 @@
-package sample.FileReading;
+package _02_FigureDrawer.FileReading;
 
-import sample.shape.Shape;
+import _02_FigureDrawer.shape.Shape;
 
 import java.io.File;
 import java.io.FileNotFoundException;

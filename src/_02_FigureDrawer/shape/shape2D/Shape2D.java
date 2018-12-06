@@ -1,6 +1,6 @@
-package sample.shape.shape2D;
+package _02_FigureDrawer.shape.shape2D;
 
-import sample.shape.Shape;
+import _02_FigureDrawer.shape.Shape;
 
 public abstract class Shape2D extends Shape {
     public float circumference(){

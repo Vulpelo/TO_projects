@@ -1,7 +1,7 @@
-package sample.FileReading.ParsingShapes;
+package _02_FigureDrawer.FileReading.ParsingShapes;
 
-import sample.shape.Shape;
-import sample.shape.shape2D.Rectangle;
+import _02_FigureDrawer.shape.Shape;
+import _02_FigureDrawer.shape.shape2D.Rectangle;
 
 import java.util.Scanner;
 

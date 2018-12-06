@@ -1,6 +1,6 @@
-package sample.FileReading.ParsingShapes;
+package _02_FigureDrawer.FileReading.ParsingShapes;
 
-import sample.shape.Point;
+import _02_FigureDrawer.shape.Point;
 
 import java.util.Scanner;
 

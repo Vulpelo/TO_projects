@@ -1,4 +1,4 @@
-// Delegator: zleca wykonywanie funkcji
+package _04_FileDirectory;// Delegator: zleca wykonywanie funkcji
 
 public class Validator implements INode {
     private INode node;

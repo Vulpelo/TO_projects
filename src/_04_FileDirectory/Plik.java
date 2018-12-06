@@ -1,3 +1,5 @@
+package _04_FileDirectory;
+
 public class Plik extends Node {
 
     private String content = "";

@@ -1,10 +1,12 @@
-import Algebra.Calculate;
-import Algebra.Factor.VectorFactory;
-import Algebra.IAlgebra;
-import Algebra.Vector2D;
-import Algebra.Vector3D;
+package _03_VectorCreator;
 
-public class Main {
+import _03_VectorCreator.Algebra.Calculate;
+import _03_VectorCreator.Algebra.Factor.VectorFactory;
+import _03_VectorCreator.Algebra.IAlgebra;
+import _03_VectorCreator.Algebra.Vector2D;
+import _03_VectorCreator.Algebra.Vector3D;
+
+public class MainVectorCreator {
     public static void main(String[] args){
         {
             /// Creating vector2d from angle and length

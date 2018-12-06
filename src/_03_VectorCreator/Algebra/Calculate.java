@@ -1,4 +1,4 @@
-package Algebra;
+package _03_VectorCreator.Algebra;
 
 public class Calculate extends Vector3D {
     public Calculate(int x, int y, int z) {

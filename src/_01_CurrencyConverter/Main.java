@@ -1,4 +1,4 @@
-package com.vulpelo;
+package _01_CurrencyConverter;
 
 public class Main {
 

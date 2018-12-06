@@ -1,4 +1,4 @@
-package Algebra;
+package _03_VectorCreator.Algebra;
 
 public class Vector3D implements IAlgebra {
 

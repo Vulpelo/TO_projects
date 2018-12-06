@@ -1,4 +1,5 @@
-package com.vulpelo;
+package _01_CurrencyConverter;
+
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;

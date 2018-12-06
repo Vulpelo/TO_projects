@@ -1,6 +1,6 @@
-package Algebra;
+package _03_VectorCreator.Algebra;
 
-public class Vector2D implements IAlgebra{
+public class Vector2D implements IAlgebra {
     protected double x;
     protected double y;
 

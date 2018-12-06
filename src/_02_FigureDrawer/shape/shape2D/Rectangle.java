@@ -1,7 +1,7 @@
-package sample.shape.shape2D;
+package _02_FigureDrawer.shape.shape2D;
 
 import javafx.scene.Group;
-import sample.shape.Point;
+import _02_FigureDrawer.shape.Point;
 
 public class Rectangle extends Shape2D  {
 

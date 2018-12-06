@@ -1,4 +1,4 @@
-package com.vulpelo;
+package _01_CurrencyConverter;
 
 import jdk.nashorn.internal.runtime.regexp.joni.exception.ValueException;
 

@@ -1,6 +1,6 @@
-package sample.FileReading.ParsingShapes;
+package _02_FigureDrawer.FileReading.ParsingShapes;
 
-import sample.shape.Shape;
+import _02_FigureDrawer.shape.Shape;
 
 
 public abstract class ParseShape {

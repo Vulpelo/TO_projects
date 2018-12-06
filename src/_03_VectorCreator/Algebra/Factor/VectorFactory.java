@@ -1,7 +1,7 @@
-package Algebra.Factor;
+package _03_VectorCreator.Algebra.Factor;
 
-import Algebra.IAlgebra;
-import Algebra.Vector2D;
+import _03_VectorCreator.Algebra.IAlgebra;
+import _03_VectorCreator.Algebra.Vector2D;
 
 public class VectorFactory implements IAlgebra {
 
