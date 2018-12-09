@@ -1,5 +1,5 @@
 // wzorzec projektowy: łańcuch zobowiązań
-package _05_ClientBot.DataReader;
+package _06_ClientBot.DataReader;
 
 public class DataReader {
 }

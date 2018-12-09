@@ -1,7 +1,7 @@
-package _05_ClientBot.Client;
+package _06_ClientBot.Client;
 
-import _05_ClientBot.Bot.State.Idle;
-import _05_ClientBot.Bot.State.Listen;
+import _06_ClientBot.Bot.State.Idle;
+import _06_ClientBot.Bot.State.Listen;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

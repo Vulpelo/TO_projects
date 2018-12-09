@@ -1,4 +1,4 @@
-package _05_ClientBot.Client;
+package _06_ClientBot.Client;
 
 public class MainClient {
     public static void main(String[] args) {

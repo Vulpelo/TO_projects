@@ -1,7 +1,7 @@
 // wzorzec projektowy: State/Stany
-package _05_ClientBot.Bot;
+package _06_ClientBot.Bot;
 
-import _05_ClientBot.Bot.State.State;
+import _06_ClientBot.Bot.State.State;
 
 public class Context {
     private State state;

@@ -1,4 +1,4 @@
-package _05_ClientBot.Server;
+package _06_ClientBot.Server;
 
 import java.util.Scanner;
 

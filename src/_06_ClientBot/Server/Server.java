@@ -1,7 +1,7 @@
 // design pattern: Observer
-package _05_ClientBot.Server;
+package _06_ClientBot.Server;
 
-import _05_ClientBot.Client.Client;
+import _06_ClientBot.Client.Client;
 
 import java.net.ServerSocket;
 import java.net.Socket;

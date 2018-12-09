@@ -1,9 +1,7 @@
-package _05_ClientBot.Client;
+package _06_ClientBot.Client;
 
-import _05_ClientBot.Bot.Context;
-import _05_ClientBot.Bot.State.State;
-import _05_ClientBot.Bot.State.Listen;
-import _05_ClientBot.Bot.State.Idle;
+import _06_ClientBot.Bot.Context;
+import _06_ClientBot.Bot.State.Idle;
 
 import java.io.PrintWriter;
 
@@ -16,7 +14,7 @@ public class ClientThread extends Thread {
         this.out = out;
     }
 
-    public void newState(_05_ClientBot.Bot.State.State state) {
+    public void newState(_06_ClientBot.Bot.State.State state) {
         out.flush();
         context.setState(state);
     }

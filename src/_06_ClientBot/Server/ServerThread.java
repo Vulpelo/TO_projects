@@ -1,5 +1,5 @@
 // design pattern: Observer
-package _05_ClientBot.Server;
+package _06_ClientBot.Server;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

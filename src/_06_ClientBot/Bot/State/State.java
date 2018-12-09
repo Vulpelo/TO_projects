@@ -1,4 +1,4 @@
-package _05_ClientBot.Bot.State;
+package _06_ClientBot.Bot.State;
 
 public abstract class State {
 
