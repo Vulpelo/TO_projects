@@ -4,5 +4,5 @@ public abstract class State {
 
     public State() { }
 
-    public void doAction() {};
+    public State doAction() {return null;};
 }

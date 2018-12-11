@@ -27,7 +27,7 @@ public class Server extends Thread {
     }
 
     // Server notifies All clients to do something
-    public void notifyAllClients(String message) {
+    public void notifyAllClients(byte[] message) {
         for (Observer s: clients) {
             s.update(message);
         }

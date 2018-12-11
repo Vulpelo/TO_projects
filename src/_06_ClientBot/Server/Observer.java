@@ -3,5 +3,5 @@ package _06_ClientBot.Server;
 
 public interface Observer
 {
-    void update(String message);
+    void update(byte[] message);
 }

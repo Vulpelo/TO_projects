@@ -7,7 +7,10 @@ public class Context {
     private State state;
 
     public void doAction() {
-        state.doAction();
+        State tmp = state.doAction();
+        if (tmp != null) {
+            state = tmp;
+        }
     }
 
     public State getState() {

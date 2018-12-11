@@ -7,13 +7,12 @@ public class MainServer {
         Scanner sc = new Scanner(System.in);
         String c;
 
-        Server server = new Server(4444);
+        Server server = new Server(1234);
         server.start();
-
         // getting input from user ass commands to server
         while (true) {
             c = sc.nextLine();
-            server.notifyAllClients(c);
+            server.notifyAllClients(c.getBytes());
         }
     }
 }

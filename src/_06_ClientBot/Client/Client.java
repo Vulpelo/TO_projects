@@ -3,10 +3,10 @@ package _06_ClientBot.Client;
 import _06_ClientBot.Bot.State.Idle;
 import _06_ClientBot.Bot.State.Listen;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.Socket;
+import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class Client implements Runnable {
@@ -15,8 +15,8 @@ public class Client implements Runnable {
     private String hostName;
     private int port;
 
-    private PrintWriter out;
-    private BufferedReader in;
+    private OutputStream out;
+    private InputStream in;
 
     public Client(String hostName, int port) {
         this.hostName = hostName;
@@ -27,6 +27,8 @@ public class Client implements Runnable {
         switch (command.toLowerCase()) {
             case "listen":
                 client.newState(new Listen(out));
+                break;
+            case "ss":
                 break;
             case "idle":
                 client.newState(new Idle());
@@ -43,23 +45,26 @@ public class Client implements Runnable {
             // creating client
             Socket clientSocket = new Socket(hostName, port);
 
-            out = new PrintWriter( clientSocket.getOutputStream(), true);
-            in = new BufferedReader( new InputStreamReader( clientSocket.getInputStream() ) );
+            out = clientSocket.getOutputStream();
+            in = clientSocket.getInputStream();
 
             // creating client 'brain'
             client = new ClientThread(out);
             client.start();
 
-            // lisning from server, getting data from server
-            while ((inputLine = in.readLine()) != null) {
-                System.out.println("Got Command: " + inputLine);
+            byte[] bytes = recive();
+            // listening from server, getting data from server
+            while ((bytes) != null) {
+                String str = new String(bytes, StandardCharsets.UTF_8);
+                System.out.println("Got Command: " + str);
 
                 // end client if exit
-                if (inputLine.equalsIgnoreCase("exit")) {
+                if (str.equalsIgnoreCase("exit")) {
                     break;
                 }
+                readCommand(str);
 
-                readCommand(inputLine);
+                bytes = recive();
             }
 
             sc.close();
@@ -70,5 +75,22 @@ public class Client implements Runnable {
         } catch (Exception e) {
             System.out.println(e.toString());
         }
+    }
+    private byte[] recive() {
+        try {
+            // getting size
+            byte[] sizeAr = new byte[4];
+            in.read(sizeAr);
+            int size = ByteBuffer.wrap(sizeAr).asIntBuffer().get();
+
+            // getting data
+            byte[] data = new byte[size];
+            in.read(data);
+
+            return data;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

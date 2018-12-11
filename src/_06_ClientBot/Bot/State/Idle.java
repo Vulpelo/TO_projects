@@ -8,12 +8,13 @@ public class Idle extends State {
     }
 
     @Override
-    public void doAction() {
+    public State doAction() {
         try {
             TimeUnit.SECONDS.sleep(1);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        return null;
     }
 
 }
