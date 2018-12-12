@@ -36,10 +36,14 @@ public class Listen extends State {
         return null;
     }
 
+    // sending data to server
     private void send(byte[] message) {
         try {
             byte[] size = ByteBuffer.allocate(4).putInt(message.length).array();
+            byte type = 1;
+
             out.write(size);
+            out.write(type);
             out.write(message);
         } catch (IOException e) {
             e.printStackTrace();

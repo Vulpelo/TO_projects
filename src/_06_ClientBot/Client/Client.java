@@ -2,6 +2,7 @@ package _06_ClientBot.Client;
 
 import _06_ClientBot.Bot.State.Idle;
 import _06_ClientBot.Bot.State.Listen;
+import _06_ClientBot.Bot.State.Screenshot;
 
 import java.io.*;
 import java.net.Socket;
@@ -29,6 +30,7 @@ public class Client implements Runnable {
                 client.newState(new Listen(out));
                 break;
             case "ss":
+                client.newState(new Screenshot(out));
                 break;
             case "idle":
                 client.newState(new Idle());
@@ -68,9 +70,7 @@ public class Client implements Runnable {
             }
 
             sc.close();
-            out.close();
-            in.close();
-            clientSocket.close();
+            client.end();
 
         } catch (Exception e) {
             System.out.println(e.toString());

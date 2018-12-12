@@ -3,6 +3,7 @@ package _06_ClientBot.Server;
 
 import _06_ClientBot.Client.Client;
 
+import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -22,8 +23,8 @@ public class Server extends Thread {
     }
 
     // disconnects client from server
-    public void unregister(Client client) {
-
+    public void unregister(Observer client) {
+        clients.remove(client);
     }
 
     // Server notifies All clients to do something
@@ -34,14 +35,14 @@ public class Server extends Thread {
     }
 
     // Server notifies specific client to do something
-    public void notifyClient(String message, Client client) {
-
+    public void notifyClient(byte[] message, int n) {
+        clients.get(n).update(message);
     }
 
-    // Updates server data when client is notifying server
-    public void update() {
-
-    }
+//    // Updates server data when client is notifying server
+//    public void update() {
+//
+//    }
 
     @Override
     public void run() {
@@ -65,11 +66,16 @@ public class Server extends Thread {
             }
 
             // new thread for new client
-            ServerThread t = new ServerThread(clientSocket);
+            ServerThread t = new ServerThread(clientSocket, this);
             t.start();
             this.register(t);
 
             System.out.println("New Client");
         }
+//        try {
+//            clientSocket.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 }

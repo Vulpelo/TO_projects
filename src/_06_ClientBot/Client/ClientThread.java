@@ -11,6 +11,8 @@ public class ClientThread extends Thread {
     private Context context = new Context();
     private OutputStream out;
 
+    private boolean works = true;
+
     public ClientThread(OutputStream out) {
         context.setState(new Idle());
         this.out = out;
@@ -25,9 +27,14 @@ public class ClientThread extends Thread {
         context.setState(state);
     }
 
+    public void end() {
+        works = false;
+    }
+
+
     @Override
     public void run() {
-        while (true) {
+        while (works) {
             context.doAction();
         }
     }
