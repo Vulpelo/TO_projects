@@ -4,16 +4,14 @@ import _07_IteratorAndSorting.Iterable.ConcreteCollection;
 import _07_IteratorAndSorting.Iterable.Iterator.Iterator;
 import _07_IteratorAndSorting.Sort.CtxSort;
 
+import java.util.Random;
+
 public class Main {
     private static ConcreteCollection<int[]> list = new ConcreteCollection<>();
 
     public static void main(String[] args) {
         for (int i=0; i<10; i++) {
-            int[] tab = new int[10];
-            for(int j=9; j>=0; j--) {
-                tab[j] = 10-j;
-            }
-            list.addObj(tab);
+            list.addObj(randArray(10));
         }
 
         CtxSort sorting = new CtxSort();
@@ -31,6 +29,17 @@ public class Main {
             }
             System.out.println();
         }
+    }
+
+    private static int[] randArray(int len) {
+        Random r = new Random();
+        int[] arr = new int[len];
+
+        for (int i=0; i<len; i++) {
+            arr[i] = r.nextInt(999);
+        }
+
+        return arr;
     }
 
 }
