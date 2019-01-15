@@ -4,6 +4,11 @@ public class Vector2 {
     private float x;
     private float y;
 
+    public Vector2(Vector2 vec) {
+        this.x = vec.getX();
+        this.y = vec.getY();
+    }
+
     public Vector2(float x, float y) {
         this.x = x;
         this.y = y;

@@ -36,20 +36,29 @@ public class Main extends Application {
         wonder.setCycleCount(Timeline.INDEFINITE);
         wonder.play();
 
-        ctr.eventTick(); // ??
-
         Button b1 = new Button("Save state");
         b1.setOnAction((event)->saveStateButtonClicked());
-        root.getChildren().add(b1);
+        root.getChildren().add(1, b1);
+
+        Button b2 = new Button("Load state");
+        b2.setLayoutX(100);
+        b2.setOnAction((event)->loadStateButtonClicked());
+        root.getChildren().add(2, b2);
 
         Scene scene = new Scene(root, 200, 200 + offsetY);
-        stage.setTitle("Load and Draw");
+        stage.setTitle("Particle Simulator");
         stage.setScene(scene);
         stage.show();
     }
 
-    void saveStateButtonClicked(){
+    void saveStateButtonClicked() {
+        ctr.saveState();
+        System.out.println("save");
+    }
 
+    void loadStateButtonClicked() {
+        ctr.loadState();
+        System.out.println("load");
     }
 
     void createRenderGroup() {

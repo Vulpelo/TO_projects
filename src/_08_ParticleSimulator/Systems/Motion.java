@@ -9,7 +9,7 @@ import java.util.Random;
 
 public class Motion implements ESCSystem {
     private Particle particle;
-    private Vector2 movement;
+    private Vector2 velocity;
     private Group renderGroup;
 
     public Motion(Particle particle, Group renderGroup) {
@@ -19,7 +19,7 @@ public class Motion implements ESCSystem {
         Random random = new Random();
 
         int tab[] = {-1,1};
-        movement = new Vector2(
+        velocity = new Vector2(
                 (random.nextFloat()*200 + 100) * tab[random.nextInt(2)],
                 (random.nextFloat()*200 + 100) * tab[random.nextInt(2)]
                 );
@@ -29,26 +29,38 @@ public class Motion implements ESCSystem {
         return particle;
     }
 
+    public void setParticle(Particle particle) {
+        this.particle = particle;
+    }
+
+    public void setParticlePosition(Vector2 position) {
+        particle.setPosition(position);
+    }
+
+    public Vector2 getVelocity() {
+        return velocity;
+    }
+
     @Override
     public void eventTick(float deltaTime) {
         collisionCheck();
 
         Vector2 pos = particle.getPosition();
-        pos.setX( pos.getX() + movement.getX() * deltaTime );
-        pos.setY( pos.getY() + movement.getY() * deltaTime );
+        pos.setX( pos.getX() + velocity.getX() * deltaTime );
+        pos.setY( pos.getY() + velocity.getY() * deltaTime );
 
         particle.setPosition(pos);
 
         particle.render(renderGroup);
     }
 
-    public void collisionCheck() {
+    private void collisionCheck() {
         Vector2 pos = particle.getPosition();
         if (pos.getX() <= 0 || pos.getX() >= 200) {
-            movement.setX(-movement.getX());
+            velocity.setX(-velocity.getX());
         }
         if (pos.getY() <= 0 || pos.getY()>=200) {
-            movement.setY(-movement.getY());
+            velocity.setY(-velocity.getY());
         }
 
     }
