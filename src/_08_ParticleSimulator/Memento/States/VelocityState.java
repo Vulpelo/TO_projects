@@ -8,13 +8,13 @@ public class VelocityState implements MementoState {
     private float y;
 
     @Override
-    public Object getState() {
+    public Object getSave() {
         Vector2 p = new Vector2(x, y);
         return p;
     }
 
     @Override
-    public void setState(Object object) {
+    public void setSave(Object object) {
         Vector2 vec = object instanceof Vector2 ? ((Vector2) object) : null;
 
         if (vec != null) {

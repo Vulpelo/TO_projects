@@ -7,14 +7,14 @@ public class ParticleState implements MementoState {
     private Vector2 position;
 
     @Override
-    public Object getState() {
+    public Object getSave() {
         Particle p = new Particle();
         p.setPosition(new Vector2(position));
         return p;
     }
 
     @Override
-    public void setState(Object object) {
+    public void setSave(Object object) {
         Particle particle = object instanceof Particle ? ((Particle) object) : null;
 
         if (particle != null) {

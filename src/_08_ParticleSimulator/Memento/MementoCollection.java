@@ -10,18 +10,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MementoCollection {
-    List<MementoState> states = new ArrayList<>();
+    List<Memento> mementos = new ArrayList<>();
 
     public boolean saveState(Object object) {
         if (object instanceof Particle) {
             MementoState st = new ParticleState();
-            st.setState(object);
+            st.setSave(object);
             add(st);
             return true;
         }
         if (object instanceof Vector2) {
             MementoState st = new VelocityState();
-            st.setState(object);
+            st.setSave(object);
             add(st);
             return true;
         }
@@ -29,10 +29,14 @@ public class MementoCollection {
     }
 
     public void add(MementoState state) {
-        states.add(state);
+        mementos.add(0, new Memento(state));
     }
 
-    public List<MementoState> getStates() {
-        return states;
+    public List<Memento> getMementos() {
+        return mementos;
+    }
+
+    public void remove(int index) {
+        mementos.remove(index);
     }
 }

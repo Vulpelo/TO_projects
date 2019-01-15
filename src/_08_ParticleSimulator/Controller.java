@@ -2,8 +2,8 @@ package _08_ParticleSimulator;
 
 import _08_ParticleSimulator.Entity.Particle;
 import _08_ParticleSimulator.Math.Vector2;
+import _08_ParticleSimulator.Memento.Memento;
 import _08_ParticleSimulator.Memento.MementoCollection;
-import _08_ParticleSimulator.Memento.States.MementoState;
 import _08_ParticleSimulator.Systems.Motion;
 import javafx.scene.Group;
 
@@ -57,13 +57,15 @@ public class Controller {
     }
 
     public void loadState() {
-        List<MementoState> par_states = particleCollection.getStates();
-        List<MementoState> vel_states = velocityCollection.getStates();
+        List<Memento> par_states = particleCollection.getMementos();
+        List<Memento> vel_states = velocityCollection.getMementos();
 
-
+        if (!par_states.isEmpty() && !vel_states.isEmpty())
         for (int i=0; i<motions.size(); i++) {
-            Particle p = par_states.get(i).getState() instanceof Particle ? ((Particle)par_states.get(i).getState()): null;
-            Vector2 v = vel_states.get(i).getState() instanceof Vector2 ? ((Vector2)vel_states.get(i).getState()): null;
+            Particle p = par_states.get(i).getState().getSave() instanceof Particle
+                    ? ((Particle)par_states.get(i).getState().getSave()): null;
+            Vector2 v = vel_states.get(i).getState().getSave() instanceof Vector2
+                    ? ((Vector2)vel_states.get(i).getState().getSave()): null;
 
             if (p != null) {
                 motions.get(i).getParticle().setPosition(p.getPosition());
@@ -72,6 +74,9 @@ public class Controller {
                 motions.get(i).getVelocity().setX(v.getX());
                 motions.get(i).getVelocity().setY(v.getY());
             }
+
+//            particleCollection.remove(0);
+//            velocityCollection.remove(0);
         }
     }
 }
