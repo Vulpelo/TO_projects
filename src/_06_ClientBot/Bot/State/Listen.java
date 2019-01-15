@@ -5,7 +5,7 @@ import java.nio.ByteBuffer;
 import java.util.Scanner;
 
 public class Listen extends State {
-//    private BufferedReader c = new BufferedReader(new InputStreamReader(System.in));
+//    private BufferedReader c = new BufferedReader(new InputStreamReader(Systems.in));
 
     private String line = "";
 
