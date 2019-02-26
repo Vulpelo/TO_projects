@@ -6,7 +6,5 @@ public class Main {
         View converter = new View();
         Controler controler = new ConsolControler(converter);
         controler.start();
-
-        System.out.print("End");
     }
 }
