@@ -22,3 +22,10 @@ Projects for studies on TO (Technologie Obiektowe)
 
 * _06_ClientBot -> 
     * Using design patterns: Chain of responsibility, Observer, State.
+    
+* _07_IteratorAndSorting -> 
+    * Using design patterns: Iterator, Strategy/State.
+    
+* _08_ParticleSimulator -> 
+    * Using design patterns: Memento.
+    
