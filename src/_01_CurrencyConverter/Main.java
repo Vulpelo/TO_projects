@@ -7,5 +7,6 @@ public class Main {
         Controler controler = new ConsolControler(converter);
         controler.start();
 
+        System.out.print("End");
     }
 }
