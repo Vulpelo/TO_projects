@@ -2,6 +2,94 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0caf9935-294a-48b2-98ed-6ba2259fd4df" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_01_CurrencyConverter/ConsolControler.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_01_CurrencyConverter/Controler.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_01_CurrencyConverter/Currency.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_01_CurrencyConverter/CurrencyCalculator.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_01_CurrencyConverter/CurrencyCollection.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_01_CurrencyConverter/FileReaderXML.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_01_CurrencyConverter/IFileReader.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_01_CurrencyConverter/Main.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_01_CurrencyConverter/ServerConnection.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_01_CurrencyConverter/View.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/Controller.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/FileReading/ParseElement.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/FileReading/ParsingShapes/ParseCircle.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/FileReading/ParsingShapes/ParseLine.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/FileReading/ParsingShapes/ParsePoint.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/FileReading/ParsingShapes/ParseRectangle.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/FileReading/ParsingShapes/ParseShape.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/FileReading/TXTReader.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/Main.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/example.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/sample.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/shape/IShape.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/shape/Point.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/shape/Rendering.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/shape/Shape.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/shape/shape1D/Line.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/shape/shape1D/Shape1D.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/shape/shape2D/Circle.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/shape/shape2D/Rectangle.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_02_FigureDrawer/shape/shape2D/Shape2D.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_03_VectorCreator/Algebra/Calculate.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_03_VectorCreator/Algebra/Factor/VectorFactory.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_03_VectorCreator/Algebra/IAlgebra.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_03_VectorCreator/Algebra/Vector2D.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_03_VectorCreator/Algebra/Vector3D.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_03_VectorCreator/MainVectorCreator.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_04_FileDirectory/Check_Folder.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_04_FileDirectory/Check_Plik.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_04_FileDirectory/Folder.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_04_FileDirectory/INode.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_04_FileDirectory/Main.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_04_FileDirectory/Node.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_04_FileDirectory/Plik.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_04_FileDirectory/Validator.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_05_PhoneBook/ListNames.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_05_PhoneBook/Main.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_05_PhoneBook/Name.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_05_PhoneBook/Number.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_05_PhoneBook/NumberList.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_05_PhoneBook/PhoneBook.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_06_ClientBot/Bot/Context.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_06_ClientBot/Bot/State/Idle.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_06_ClientBot/Bot/State/Listen.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_06_ClientBot/Bot/State/Screenshot.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_06_ClientBot/Bot/State/State.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_06_ClientBot/Client/Client.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_06_ClientBot/Client/ClientThread.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_06_ClientBot/Client/MainClient.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_06_ClientBot/Reader/DataReader.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_06_ClientBot/Reader/DataReaderBegin.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_06_ClientBot/Reader/ImageReader.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_06_ClientBot/Reader/TextReader.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_06_ClientBot/Server/MainServer.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_06_ClientBot/Server/Observer.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_06_ClientBot/Server/Server.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_06_ClientBot/Server/ServerThread.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_07_IteratorAndSorting/Iterable/ConcreteCollection.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_07_IteratorAndSorting/Iterable/Iterable.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_07_IteratorAndSorting/Iterable/Iterator/ConcreteIterator.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_07_IteratorAndSorting/Iterable/Iterator/Iterator.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_07_IteratorAndSorting/Main.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_07_IteratorAndSorting/Sort/Bubble.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_07_IteratorAndSorting/Sort/CtxSort.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_07_IteratorAndSorting/Sort/QuickSort.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_07_IteratorAndSorting/Sort/SortStrategy.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_08_ParticleSimulator/Controller.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_08_ParticleSimulator/ESCSystem.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_08_ParticleSimulator/Entity/Particle.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_08_ParticleSimulator/Main$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_08_ParticleSimulator/Main.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_08_ParticleSimulator/Math/Vector2.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_08_ParticleSimulator/Memento/Memento.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_08_ParticleSimulator/Memento/MementoCollection.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_08_ParticleSimulator/Memento/States/MementoState.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_08_ParticleSimulator/Memento/States/ParticleState.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_08_ParticleSimulator/Memento/States/VelocityState.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_08_ParticleSimulator/Rendering.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/TO_projects/_08_ParticleSimulator/Systems/Motion.class" />
       <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/_01_CurrencyConverter/Main.java" afterPath="$PROJECT_DIR$/src/_01_CurrencyConverter/Main.java" />
@@ -34,8 +122,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -446,7 +534,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -458,7 +545,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34333333" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41333333" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41333333" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17909536" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -937,8 +1024,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
           <folding />
         </state>
       </provider>
